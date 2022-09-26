@@ -1,0 +1,19 @@
+//Configuration Example
+{
+    "coins": [
+        {
+            "name": "XRP",
+            "owned": 500,
+            "conversion_to": "USD",
+            "crypto_website": "https://coinmarketcap.com/currencies/xrp",
+            "crypto_dom_element": ".priceValue"
+        },
+        {
+            "name": "BCH",
+            "owned": 1,
+            "conversion_to": "USD",
+            "crypto_website": "https://coinmarketcap.com/currencies/bitcoin-cash",
+            "crypto_dom_element": ".priceValue"
+        }
+    ]
+}
