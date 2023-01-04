@@ -33,6 +33,7 @@ func (cy *CryptoCurrency) GetCurrentValue(url, domElement string) (float64, erro
 	price := strings.ReplaceAll(strings.TrimSpace(docHTML.Find(domElement).Text()), "$", "")
 
 	v, err = strconv.ParseFloat(price, 64)
+
 	if err != nil {
 		return v, fmt.Errorf("[GetCurrentValue] unable to find element, %w", ErrorFiat)
 	}
